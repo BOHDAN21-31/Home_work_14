@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css  ">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap test</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hillel</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container-fluid mt-4§">
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-2 bg-light p-3">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="image/Cat.svg" class="d-block w-200" alt="Cat">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="image/dog.svg" class="d-block w-200" alt="Dog">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="image/elephan.jpg" class="d-block w-200" alt="Elephant">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="image/bear.png" class="d-block w-200" alt="Bear">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="image/animals.svg" class="d-block w-200" alt="Animals">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-8 bg-white p-3">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            First row
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus obcaecati placeat sit.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Second row
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, commodi, voluptatem!</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Third row
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corporis doloremque iusto vel?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-2 bg-light p-3">
+            <div class="p-3 bg-light border rounded">
+                <h5 class="mb-3">Зв'язатися з нами</h5>
+                <form>
+                    <div class="mb-2">
+                        <label for="name" class="form-label">Ім’я</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ваше ім’я">
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-2">
+                        <label for="phone" class="form-label">Телефон</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="+380...">
+                    </div>
+                    <div class="mb-2">
+                        <label for="service" class="form-label">Послуга</label>
+                        <select class="form-select" id="service">
+                            <option>Консультація</option>
+                            <option>Запис на прийом</option>
+                            <option>Зворотній дзвінок</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <label for="message" class="form-label">Повідомлення</label>
+                        <textarea class="form-control" id="message" rows="2" placeholder="Ваше повідомлення..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm w-100 mt-2">Відправити</button>
+                </form>
+            </div>
+        </div>
+</main>
+<footer class="mt-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100">
+                    <img src="image/people.jpg" class="card-img-top" alt="people">
+                    <div class="card-body">
+                        <h5 class="card-title">New People</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam,
+                            dolorem dolores est fuga reprehenderit!</p>
+                        <a href="#" class="btn btn-primary mt-auto">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100">
+                    <img src="image/people_2.jpg" class="card-img-top" alt="people2">
+                    <div class="card-body">
+                        <h5 class="card-title">Old people</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, praesentium.</p>
+                        <a href="#" class="btn btn-primary mt-auto">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
